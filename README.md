@@ -13,15 +13,15 @@ To test the setup, just run `curl localhost` on the host which is running the co
 
 ### Default environment settings
 
-  LISTEN_PROTO=TCP4 
-  LISTEN_PORT=80 
-  TARGET_PROTO=TCP6
-  TARGET_HOST=[2a00:1450:400d:803::200e]
-  TARGET_PORT=80
+	LISTEN_PROTO=TCP4 
+	LISTEN_PORT=80 
+	TARGET_PROTO=TCP6
+	TARGET_HOST=[2a00:1450:400d:803::200e]
+	TARGET_PORT=80
   
 To override this settings just change your parameter values at runtime. This example changes the listen and target ports to 443:
 
-  docker run -d --net host \
-  --env LISTEN_PORT=443 \
-  --env TARGET_PORT=443 \
-  toughiq/socat
+	docker run -d --net host \
+	--env LISTEN_PORT=443 \
+	--env TARGET_PORT=443 \
+	toughiq/socat
