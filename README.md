@@ -11,7 +11,7 @@ We use the `--net host` option, since we want to use the IPv6 stack of the host.
 
 To test the setup, just run `curl localhost` on the host which is running the container.
 
-Default environment settings are:
+### Default environment settings
 
   LISTEN_PROTO=TCP4 
   LISTEN_PORT=80 
